@@ -2,7 +2,7 @@
 
 services:
   client:
-    build: ./Client
+    build: ./client
     ports:
       - "3001:80"
     restart: unless-stopped
@@ -12,7 +12,7 @@ services:
       - app-network
 
   server:
-    build: ./Server
+    build: ./server
     ports:
       - "3002:3002"
     env_file: .env
