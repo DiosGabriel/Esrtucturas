@@ -20,4 +20,4 @@ RUN npx tsc
 EXPOSE 3002
 
 # Comando para desarrollo (puedes cambiar por otro si usas build separado)
-CMD ["npx", "nodemon", "--exec", "ts-node", "src/index.ts"]
+CMD ["node", "dist/index.js"]
